@@ -1,0 +1,40 @@
+body{
+	margin: 0;
+	padding: 0px;
+}
+.co{
+	border: 1px solid #000;
+	display: flex;
+	padding: 20px;
+	justify-content: space-between;
+}
+.co div{
+	border: 1px #f00 solid;
+	width: 150px;
+}
+.co .flex4{
+	border: 1px #0f0 solid;
+	height: 200px;
+}
+.flex1{
+	height: 120px;
+}
+.flex2{
+	height: 100px;
+}
+.flex3{
+	height: 40px;
+}
+@media(min-width: 640px){
+	.flex1,.flex2,.flex3,.flex4{
+			align-self: center;
+	}
+}
+@media(max-width: 640px){
+	.co{
+		flex-wrap: wrap;
+	}
+	.flex4{
+		order: -1;
+	}
+}

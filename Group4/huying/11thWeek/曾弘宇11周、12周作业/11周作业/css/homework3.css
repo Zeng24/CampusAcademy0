@@ -1,0 +1,43 @@
+body{
+	padding:20px;}
+#content{
+	background-color: #eee;
+	border:1px #999 solid;
+	height:465px; }
+#left{
+	width: 200px;
+	background-color: white;
+	margin:20px 20px;
+	border: 1px #999 solid;
+	display: inline-block;
+	float: left;}
+#center{
+	width: 75%;
+	float: left;
+	margin: 20px 20px;
+	background-color: white;
+	padding:20px;}
+#right{
+	background-color: white;
+	width: 120px;
+	border: 1px #999 solid;
+	float: left;
+	margin-top: 20px;
+	margin-left:}
+.logo{
+	width: 80px;
+	height: 80px;
+	margin:20px 20px 20px;
+	background-color: #eee;
+	text-align: center;
+	position: relative;}
+.name{
+	display:block;
+	float: right;
+	width: 80px;
+	padding-top: 20px;}
+.logo-right{
+	background-color: #eee;
+	width: 80px;
+	height: 80px;
+	margin: 20px 20px;}
