@@ -1,0 +1,449 @@
+body,p,a,div,li,ul{
+	margin: 0 auto;
+	padding: 0;
+	text-decoration: none;
+	list-style: none;
+	margin: 0;
+}
+html{
+	font-size:10px;
+	font-family: "黑体";
+}
+.wrap{
+	margin: 0 auto;
+	width: 75rem;
+}
+#top{
+	width: 75rem;
+	background: url(../第15周作业/pic/headback.png) repeat-x;
+	height: 7.8rem;
+}
+#top img{
+	float: left;
+	margin:2rem 0 0 2.6rem;
+}
+#top span{
+	display: inline-block;
+	float: left;
+	margin-top: 2.8rem;
+	color: #ffffff;
+}
+.top-line{
+	font-size: 1.8rem;
+	padding-left: 3.0rem;
+}
+#top .top-line1{
+	font-size: 2rem;
+	float: right;
+}
+#top .top-line1 a{
+	color: #ffffff;
+}
+#top .head-img{
+	float: right;
+	margin: 3.2rem 2rem 0 3.2rem;
+}
+.content1{
+	background:url(../第15周作业/pic/content-back.png) no-repeat;
+	height: 34.6rem;
+	position: relative;
+}
+.content1 p{
+	color: #ffffff;
+	padding-left: 6rem;
+}
+.content1 .content-text1{
+	font-size: 1.921rem;
+	padding-top: 8.4rem;
+}
+.content1 .content-text2{
+	font-size: 3.842rem;
+	line-height: 4.6rem;
+}
+.content1 .content-text3{
+	font-size: 1.409rem;
+	color: #00caab;
+	line-height: 2.7rem;
+}
+.weima{
+	position: absolute;
+	top: 25.2rem;
+	left: 6.4rem;
+}
+.tangle{
+	padding:7rem 0 0 6rem;
+}
+.content2{
+	background-color: #ffffff;
+	height: 71rem;
+	position: relative;
+}
+.content2-t1{
+	font-size: 3.621rem;
+	color: #00caab;
+	display: inline-block;
+	margin: 10.7rem 0 0 30.5rem;
+	font-weight: bold;
+}
+.content2-p2{
+	margin: 2.2rem 0 0 25rem;
+	font-size: 1.81rem;
+	color: #5c5c5c;
+}
+.line-left1{
+	position: absolute;
+	top: 12.4rem;
+	left: 10.5rem;
+}
+.line-left2{
+	position: absolute;
+	top: 13.1rem;
+	left: 13.5rem;
+}
+.line-right1{
+	position: absolute;
+	top: 12.4rem;
+	right: 10.5rem;
+}
+.line-right2{
+	position: absolute;
+	top: 13.1rem;
+	right: 13.5rem;
+}
+.photo1 img{
+	margin-top: 3.4rem;
+}
+.photo1{
+	margin-left: 7rem;
+	display: inline-block;
+}
+.white{
+	background: url(../第15周作业/pic/white.png);
+	box-shadow: 0.2px 0.2px 2px 0.2px #e8e8e8;
+	width: 25.5rem;
+	height: 15.2rem;
+	border-radius: 0.4rem;
+	position: absolute;
+	display: inline;
+	top: 47.4rem;
+	left: 7.8rem;
+}
+.content2 .white .photo1-text1,.content2 .white span{
+	display: inline-block;
+	margin: 0;
+	padding:0;
+}
+.content2 .photo1-text{
+	width: 7.4rem;
+	height: 2.1rem;
+	font-size: 1.2rem;
+	color: #ffffff;
+	background-color:#00caab;
+	transform: skew(6deg);
+	text-align: center;
+	padding-top: 0.8rem;
+	display: block;
+	position: absolute;
+	margin: 0;
+	top: 46.2rem;
+	left: 8.8rem;
+	float: left;
+	z-index:10000;
+}
+.content2 .photo1-text2{
+	font-size: 1.4rem;
+	margin: 0;
+	font-weight: bold;
+	float: right;
+	padding-top: 1.6rem;
+	margin-right: 2.8rem;
+}
+.content2 .photo1-text2 a{
+	color: #333333;	
+}
+.content2 .photo1-text3{
+	font-size: 1.2rem;
+	color: #f5973e;
+}
+.content2 .white .photo1-text1{
+	margin-top: 4.8rem;
+}
+.content2 .white .photo1-text1{
+	font-size: 1.4rem;
+	color: #333333;
+	margin-left: 2.8rem;
+}
+.content2 .white .photo2-text4{
+	font-size: 2.4rem;
+	color: #999999;
+}
+.content2 .photo2-text{
+	width: 7.4rem;
+	height: 2.1rem;
+	font-size: 1.2rem;
+	color: #ffffff;
+	background-color:#00caab;
+	transform: skew(6deg);
+	text-align: center;
+	padding-top: 0.8rem;
+	display: block;
+	position: absolute;
+	margin: 0;
+	top: 46.2rem;
+	left: 43.4rem;
+	float: left;
+	z-index:10000;
+}
+.white1{
+	background: url(../第15周作业/pic/white.png);
+	box-shadow: 0.2px 0.2px 2px 0.2px #e8e8e8;
+	width: 25.5rem;
+	height: 15.2rem;
+	border-radius: 0.4rem;
+	position: absolute;
+	display: inline;
+	top: 47.4rem;
+	left: 42.3rem;
+}
+.content2-img{
+	padding-top: 11.4rem;
+	float: left;
+	padding-right: 1.6rem;
+}
+.content2-img1{
+	padding-left: 34rem;
+}
+
+.content3{
+	height: 67.4rem;
+	background: url(../第15周作业/pic/content3-back.png) no-repeat;
+}
+.content3-t1{
+	color: #ffffff;
+}
+.content3-p1{
+	color: #ffffff;
+}
+.content3-j{
+	width: 33.9rem;
+	height: 17.5rem;
+	background-color: #f9f9f9;
+	border-radius: 0.6rem;
+	margin: 5.4rem 2.2rem 2.8rem 2.4rem;
+	position: relative;
+	display: inline-block;
+	float: left;
+}
+.content3-img{
+	margin: 4rem 2rem 0 3rem;
+	float: left;
+}
+.conten3-j1{
+	width: 4rem;
+	height: 1.6rem;
+	background-color: #fca623;
+	font-size: 1.116rem;
+	border-radius: 0.4rem;
+	text-align: center;
+	padding-top: 0.5rem;
+	position: absolute;
+	left: 30.5rem;
+	top: 2.6rem;
+}
+.conten3-j1 a{
+	color: #ffffff;
+}
+.conten3-j2{
+	display: inline-block;
+	float: left;
+	padding-top: 4.2rem;
+	font-size: 1.861rem;
+}
+.conten3-j2 a{
+	color: #5c5c5c;
+}
+.conten3-j2 a:hover{
+	color: #00caab;
+}
+.conten3-j3{
+	float: left;
+	font-size: 1.116rem;
+	color: #5c5c5c;
+}
+.conten3-j4{
+	font-size: 1.303rem;
+	color: #5d5d5d;
+}
+.conten3-j5{
+	font-size: 1.303rem;
+	color: #00caab;
+	line-height: 2rem;
+	font-weight: bold;
+}
+.content3-j2{
+	margin-left: 0;
+	margin-right: 0;
+}
+.content3-j3{
+	margin-top: 0;
+}
+.content4{
+	height: 127.5rem;
+	color: #ffffff;
+}
+.content4-j1{
+	background:url(../第15周作业/pic/content4-back.png);
+	width: 13.6rem;
+	height: 15.4rem;
+	margin: 3.2rem 0 0 31rem;
+}
+.content4-j1 img{
+	padding:4.4rem 0 0 3.8rem;
+}
+.content4 .content4-t1{
+	font-size: 3.122rem;
+	z-index:10000;
+	color:#5c5c5c;
+	margin-top: 3.2rem;
+	text-align:center;
+	font-weight: bold;
+}
+.content4-t2{
+	font-size: 4.683rem;
+	color: #00caab;
+}
+.content4-t3{
+	z-index:10000;
+	color: #5c5c5c;
+	font-size: 2.082rem;
+	text-align: center;
+	padding-top: 2.4rem;
+}
+.content4-j2{
+	margin-top: 6.8rem;
+}
+.content4-j2 img{
+	padding-left: 2.6rem;
+}
+.content4-j1 .content4-j3{
+	padding-left: 3.8rem;
+}
+.content5{
+	background:url(../第15周作业/pic/content5-back.png);
+	height: 43rem;
+	margin-bottom: 5rem;
+}
+.content4 .content4-t5{
+	margin: 5.6rem 0 0 30.5rem;
+	z-index:10000;
+}
+.line-left3{
+	position: absolute;
+	top: 7.2rem;
+	left: 10.5rem;
+}
+.line-left4{
+	position: absolute;
+	top: 8rem;
+	left: 13.6rem;
+}
+.line-right3{
+	position: absolute;
+	top: 7.2rem;
+	right: 10.5rem;
+}
+.line-right4{
+	position: absolute;
+	top: 8rem;
+	right: 13.6rem;
+}
+.content5 .content5-t1{
+	z-index:10001;
+	color: #ffffff;
+}
+.content5-t2{
+	text-align: center;
+	margin-left: 0;
+}
+.content5-b1{
+	width: 19rem;
+	height: 10rem;
+	background-color: #ffffff;
+	border-top-left-radius: 1rem;
+	margin:4.4rem 0.2rem 0 8.8rem;
+	display: inline-block;
+	float: left;
+}
+.baidu{
+	padding:3rem 0 0 5rem;
+}
+.content5-b2{
+	margin-left: 0;
+	border-radius: 0rem;
+	display: inline-block;
+	float: left;
+}
+.content5-b3{
+	border-top-right-radius: 1rem;
+}
+.content5-b4{
+	margin-top: 0.2rem;
+	border-radius: 0;
+	border-bottom-left-radius: 1rem;
+}
+.jingdong{
+	padding-left: 6rem;
+	padding-top: 3.6rem;
+}
+.huawei{
+	padding-left: 3rem;
+	padding-top: 3.6rem;
+}
+.yidong{
+	padding-left: 4.2rem;
+	padding-top: 3.4rem;
+}
+.souhu{
+	padding-top: 3.2rem;
+	padding-left: 6rem;
+}
+.xiecheng{
+	padding-top: 3.4rem;
+	padding-left: 5.4rem;
+}
+#bottom{
+	background: url(../第15周作业/pic/bottom-back.png) repeat-x;
+	height: 28rem;
+}
+.bottom-log1{
+	padding: 4.4rem 0 0 30.6rem;
+}
+.bottom-p1{
+	font-size: 1.801rem;
+	color: #bcbcbc;
+	text-align: center;
+	padding-top: 1rem;
+}
+#bottom span{
+	font-size: 1.401rem;
+	color: #bcbcbc;
+	display:block;
+	text-align: center;
+	padding-top: 5rem;
+	line-height: 2.6rem;
+}
+#bottom a{
+	color: #bcbcbc;
+}
+.bottom-p2{
+	font-size: 1.405rem;
+	color: #bcbcbc;
+	text-align: center;
+	line-height: 2.6rem;
+}
+.bottom-p3{
+	font-size: 1.405rem;
+	color: #bcbcbc;
+	text-align: center;
+	line-height: 2.6rem;
+}
