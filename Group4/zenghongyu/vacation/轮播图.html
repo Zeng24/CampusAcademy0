@@ -1,0 +1,63 @@
+<!DOCTYPE >
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css代码/轮播图.css">
+	<title>轮播图</title>
+<script type="text/javascript">
+	window.onload=function(){
+		var Odiv=document.getElementById('imging');
+		var Oul=document.getElementsByTagName('ul')[0];
+		var Oli=document.getElementsByTagName('li');
+		var Obtn1=document.getElementById('btn1');
+		var Obtn2=document.getElementById('btn2');
+		var timer;
+		var speed=1;
+		Oul.innerHTML+=Oul.innerHTML;
+		Oul.style.width=Oli[0].offsetWidth*Oli.length+'px';
+		Oul.style.left=0;
+		function begin(){
+			Oul.style.left=Oul.offsetLeft-speed+'px';
+		}
+		timer=setInterval(begin,30);
+		Odiv.onmouseover=function(){
+			clearInterval(timer);
+		};
+		Odiv.onmouseout=function(){
+			setInterval(begin,30);
+		}
+		function animate(offer){
+			var newLeft=parseInt(Oul.style.left)+offer;
+			Oul.style.left=newLeft+'px';
+			if (newLeft>0) {
+				Oul.style.left=-356+'px';
+			}
+			if(newLeft<-356){
+				Oul.style.left=0;
+			}
+		}		
+
+		Obtn1.onclick=function(){
+			animate(178);
+			};
+		Obtn2.onclick=function(){
+			animate(-178);
+			};
+
+		}
+</script>
+</head>
+<body>
+	<div id="wrap">
+		<input type="button" value="上一页" id="btn1">
+		<input type="button" value="下一页" id="btn2">
+	<div id="imging">
+	<ul>
+		<li><img src="img/1.jpg" class="img1 img2"></li>
+		<li><img src="img/3.jpg" class="img1"></li>
+		<li><img src="img/4.jpg" class="img1"></li>
+	</ul>
+	</div>
+	</div>
+</body>
+</html>

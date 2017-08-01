@@ -1,0 +1,87 @@
+<!DOCTYPE>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>作业19</title>
+<style>
+li,body,input,div{
+	text-decoration: none;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+</style>
+<script type="text/javascript">
+window.onload=function(){
+	var show=document.getElementById('wrap');
+	var oTxt=document.getElementById('txt1');
+	var Leftin=document.getElementById('leftin');
+	var Leftout=document.getElementById('leftout');
+	var Rightin=document.getElementById('rightin');
+	var Rightout=document.getElementById('rightout');
+	var get=document.getElementById('sort');
+	Rightin.onclick=function(){
+		if(oTxt.value<10||oTxt.value>100){
+			alert("请重新输入");
+		}
+		else{
+		var Create=document.createElement('li');
+		Create.style.width=20+'px';
+		Create.style.height=oTxt.value;
+		Create.style.background='red';
+		Create.style.display='inline-block';
+		show.append(Create);
+		oTxt.value='';
+		}
+	};
+	Leftin.onclick=function(){
+		if(oTxt.value<10||oTxt.value>100){
+			alert("请重新输入");
+		}
+		else{
+		var Create=document.createElement('li');
+		Create.style.width=20+'px';
+		Create.style.height=oTxt.value;
+		Create.style.background='red';
+		Create.style.display='inline-block';
+		var Ali=document.getElementsByTagName('li');
+		show.insertBefore(Create,Ali[0]);
+		oTxt.value='';
+		}
+	};
+	Leftout.onclick=function(){
+		var Ali=document.getElementsByTagName('li');
+		show.removeChild(Ali[0]);
+	}
+	Rightout.onclick=function(){
+		var Ali=document.getElementsByTagName('li');
+		show.removeChild(Ali[Ali.length-1]);
+	}
+
+	get.onclick=function(){
+		var Ali=document.getElementsByTagName('li');
+		var len=Ali.length,j;
+            var temp;
+            while(len>0){
+                for(j=0;j<len-1;j++){
+                    if(Ali[j]>Ali[j+1]){
+                        temp=Ali[j];
+                        Ali[j]=Ali[j+1];
+                        Ali[j+1]=temp;
+                    }
+                }
+            }
+	}
+}
+</script>
+</head>
+<body>
+	<input type="text" id="txt1">
+	<input type="button" id="leftin" value="左侧入">
+	<input type="button" id="rightin" value="右侧入">
+	<input type="button" id="leftout" value="左侧出">
+	<input type="button" id="rightout" value="右侧出">
+	<input type="button" id="sort" value="排序">
+	<div id="wrap"></div>
+</body>
+</html>

@@ -1,0 +1,16 @@
+window.onload=function(){
+	var oBtn=document.getElementsByTagName('li');
+	var oImg=document.getElementsByClassName('display1');
+	var i=0;
+	for(i=0;i<oBtn.length;i++){
+		oBtn[i].index=i;
+		oBtn[i].onclick=function(){
+			for(i=0;i<oBtn.length;i++){
+				oBtn[i].className='';
+				oImg[i].style.display='none';
+			}
+			this.className='active';
+			oImg[this.index].style.display='block';
+		};
+	}
+}

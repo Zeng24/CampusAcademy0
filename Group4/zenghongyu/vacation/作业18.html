@@ -1,0 +1,70 @@
+<!DOCTYPE>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>任务17</title>
+</head>
+<style type="text/css">
+p,body,input,li,div{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	text-decoration:none;
+}
+</style>
+<script type="text/javascript">
+function showNewby(){
+
+}
+window.onload=function(){
+	var show=document.getElementById('show');
+	var oTxt=document.getElementById('txt');
+	var inLeft=document.getElementById('left1');
+	var inRight=document.getElementById('right1');
+	var outLeft=document.getElementById('left0');
+	var outRight=document.getElementById('right0');
+	inRight.onclick=function(){
+		var showNew=document.createElement('li');
+		showNew.style.width=100+'px';
+		showNew.style.height=100+'px';
+		showNew.style.background='red';
+		showNew.style.color='white';
+		showNew.style.display='inline-block';
+		showNew.innerHTML=oTxt.value;
+		show.appendChild(showNew);
+		oTxt.value='';
+	};
+	inLeft.onclick=function(){
+		var showNew=document.createElement('li');
+		showNew.style.width=100+'px';
+		showNew.style.height=100+'px';
+		showNew.style.background='red';
+		showNew.style.color='white';
+		showNew.style.display='inline-block';
+		showNew.innerHTML=oTxt.value;	
+		var Oli=document.getElementsByTagName('li');
+		show.insertBefore(showNew,Oli[0]);
+	}
+	outLeft.onclick=function(){
+		var Oli=document.getElementsByTagName('li');
+		alert(Oli[0].innerHTML);
+		show.removeChild(Oli[0]);
+	}
+	outRight.onclick=function(){
+		var Oli=document.getElementsByTagName('li');
+		alert(Oli[Oli.length-1].innerHTML);
+		show.removeChild(Oli[Oli.length-1]);
+	}
+}
+</script>
+<body>
+	<div>
+		<input type="text" id="txt">
+		<input type="button" id="left1" value="左侧入" />
+		<input type="button" id="right1" value="右侧入" /> 
+		<input type="button" id="left0" value="左侧出" />
+		<input type="button" id="right0" value="右侧出" />
+		<div id="show"></div>
+	</div>
+</body>
+</html>

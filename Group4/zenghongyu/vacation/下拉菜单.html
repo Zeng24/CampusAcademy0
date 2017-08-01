@@ -1,0 +1,56 @@
+<!DOCTYPE>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css代码/下拉菜单.css">
+	<title>下拉菜单</title>
+<script type="text/javascript">
+	window.onload=function(){
+		var nav=document.getElementById('nav').getElementsByTagName('li');
+		for(var i=0;i<nav.length;i++){
+		nav[i].onmouseover=function(){
+			this.style.fontWight="bold";
+			this.style.overflow="visible";
+			this.style.background="#666666";
+		};
+		nav[i].onmouseout=function(){
+			this.style.fontWight="normal";
+			this.style.background="#9999999";
+			this.style.overflow="hidden";
+		}
+		}
+
+	}
+</script>
+</head>
+<body>
+	<div id="border">
+		<div id="nav">
+			<ul>
+				<li>
+					<a href="#">添加</a>
+					<div id="sumennu">
+						<a href="#">日志</a>
+						<a href="#">分类</a>
+					</div>
+				</li>
+				<li>
+					<a href="#">管理</a>
+					<div id="sumennu">
+						<a href="#">分类</a>
+						<a href="#">文章</a>
+					</div>
+				</li>
+				<li>
+					<a href="#">扩展</a>
+					<div id="sumennu">
+						<a href="#">评论管理</a>
+						<a href="#">留言管理</a>
+						<a href="#">注销退出</a>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>
