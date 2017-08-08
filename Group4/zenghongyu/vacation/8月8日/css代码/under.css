@@ -1,0 +1,38 @@
+body,li,label,p,a{
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	list-style: none;
+}
+#wrap{
+	width: 300px;
+	margin: 0 auto;
+}
+#Nwin{
+	background: #ccc;
+	width: 300px;
+	height: 100px;
+	position: relative;
+	border: 2px solid green;
+	position: absolute;
+}
+#cancel{
+	position: absolute;
+	right: 0;
+	height: 20px;
+	width: 20px;
+}
+.mar1{
+	margin-top: 26px;
+}
+.mar2{
+	margin-top: 10px;
+}
+#shadow{
+	width: 100vw;
+	height: 100vh;
+	background: rgba(0,0,0,0.8);
+	position: fixed;
+	top: 0;
+	display: none;
+}

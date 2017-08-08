@@ -1,0 +1,27 @@
+li,ul,div,body,a,h4{
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	list-style: none;
+	background: #ccc;
+}
+#wrap{
+	width: 600px;
+	margin: 0 auto;
+}
+.head{
+	float: left;
+	display: inline-block;
+	width: 80px;
+	text-align: center;
+	border-radius: 10px;
+}
+.head:hover{
+	background: #fff;
+}
+.me{
+	display: none;
+}
+.me li:hover{
+	background: green;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>二级菜单</title>
+	<link rel="stylesheet" type="text/css" href="css代码/double.css">
+<script type="text/javascript">
+function show(li){  
+    var submenu=li.getElementsByTagName("ul")[0];  
+    submenu.style.display="block";  
+}  
+function hide(li){  
+    var submenu=li.getElementsByTagName("ul")[0];  
+    submenu.style.display="none";  
+}
+</script>
+</head>
+<body>
+	<div id="wrap">
+		<ul>
+			<li class="head" onmouseover="show(this)" onmouseout="hide(this)">首页
+				<ul class="me" >
+					<li>关于我们</li>
+					<li>关于你们</li>
+				</ul>
+			</li>
+			<li class="head" onmouseover="show(this)" onmouseout="hide(this)">课程
+				<ul class="me">
+					<li>关于我们</li>
+					<li>关于你们</li>
+				</ul>
+			</li>
+			<li class="head" onmouseover="show(this)" onmouseout="hide(this)">我们
+				<ul class="me">
+					<li>关于我们</li>
+					<li>关于你们</li>
+				</ul>
+			</li>
+			<li class="head" onmouseover="show(this)" onmouseout="hide(this)">案例
+				<ul class="me">
+					<li>关于我们</li>
+					<li>关于你们</li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+</body>
+</html>

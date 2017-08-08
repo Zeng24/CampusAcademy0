@@ -1,0 +1,36 @@
+body,img,a,li,ul{
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	list-style: none;
+}
+#border{
+	margin: 0 auto;
+	width: 440px;
+	height: 520px;
+	overflow: hidden;
+	position: relative;
+	border-radius: 20px;
+}
+#wrap{
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.div{
+	display: inline-block;
+	float: left;
+	background: #ccc;
+	width:440px;
+	height: 520px;
+	border:1px solid black;
+}
+.imfor{
+	background: #ccc;
+	width: 440px;
+	display: inline-block;
+}
+span{
+	color: black;
+	font-size: 20px;
+}
